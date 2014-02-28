@@ -196,33 +196,229 @@ p{
 .section1-content{
 
 }
+
+/* CONTRAST */
 #section2{
 	background-color:smokewhite;
 	transition: all 4s;
+	background-color:#00A79D;;
 }
 .section2-content{
+	position: absolute;
 	float:left;
 	width:900px;
-	height:600;
+	height:600px;
+	margin:auto;
+	left:0;right:0;
+	top:0;bottom:0;
+	z-index:100;
+}
+.lines {
+	z-index:5;
+	border-left: dashed 4px #fff;
+	border-bottom:dashed 4px #fff;
+	border-right :dashed 4px #fff;
+	height:300px;
+	width:605px;
+	margin: auto;
+	position: absolute;
+	top:0;right:0;bottom:0;left:0;
 }
 .onethird{
-		width:250px;
-		height:250px;
-		float:left;
-		margin: 25px;
+	width:250px;
+	height:250px;
+	float:left;
+	margin: 25px;
+	font-size:8px;
+	text-align:left;
+}
+.onethird p{
+	padding: 30px;
 }
 .border{
-	border: dashed 4px #00A79D;
+	border: dashed 4px #fff;
 }
 .solid {
-	background-color: #00A79D;
+	background-color: #fff;
 	color:#fff;
 }
 .onethird:nth-child(1){
-	font-size:10px;
-	padding-top:115px;
+	font-size:13px;
+	padding-top:80px;
+	color:#00A79D;
+	text-align: center;
 }
 .onethird:nth-child(3){
-	font-size:10px;
-	padding-top:115px;
+	text-align:center;
+	padding-top:85px;
+	color:#fff;
+	background-color: #00A79D;
+}
+.onethird:nth-child(4){
+
+	padding-top:70px;
+	color:#fff;
+	background-color: #00A79D;
+}
+.onethird:nth-child(6){
+	
+	padding-top:60px;
+	color:#00A79D;
+}
+
+/* COLOR */
+.section3-content{
+	position: absolute;
+	float:left;
+	width:900px;
+	height:500px;
+	margin:auto;
+	left:0;right:0;
+	top:0;bottom:0;
+	z-index:100;
+	p{
+		padding-top:10px;
+		color:#fff;
+	}
+}
+.hex:nth-child(odd){
+	margin-left:60px;
+
+}
+.hex:before {
+    content: " ";
+    width: 0; height: 0;
+    border-bottom: 30px solid #6C6;
+    border-left: 52px solid transparent;
+    border-right: 52px solid transparent;
+    position: absolute;
+    top: -30px;
+    left:0;
+}
+
+.hex {
+    margin-top: 30px;
+    width: 104px;
+    height: 60px;
+    background-color: #6C6;
+    position: relative;
+    display:block;
+}
+
+.hex:after {
+    content: "";
+    width: 0;
+    position: absolute;
+    bottom: -30px;
+    border-top: 30px solid #6C6;
+    border-left: 52px solid transparent;
+    border-right: 52px solid transparent;
+    left:0;
+}
+
+.hex:nth-child(1){
+	background-color: lighten(red, 20%);
+	&:after{
+		border-top: 30px solid lighten(red, 20%);
+	}
+	&:before{
+		border-bottom: 30px solid lighten(red, 20%);
+	}
+}
+
+.hex:nth-child(2){
+	background-color: lighten(purple, 20%);
+	&:after{
+		border-top: 30px solid lighten(purple, 20%);
+	}
+	&:before{
+		border-bottom: 30px solid lighten(purple, 20%);
+	}
+}
+
+.hex:nth-child(3){
+	background-color: darken(yellow, 5%);
+	&:after{
+		border-top: 30px solid darken(yellow, 5%);
+	}
+	&:before{
+		border-bottom: 30px solid darken(yellow, 5%);
+	}
+}
+
+.hex:nth-child(4){
+	background-color: lighten(blue, 30%);
+	&:after{
+		border-top: 30px solid lighten(blue,30%);
+	}
+	&:before{
+		border-bottom: 30px solid lighten(blue,30%);
+	}
+}
+
+.giant-hex:before {
+    content: " ";
+    width: 0; height: 0;
+    border-bottom: 180px solid #6C6;
+    border-left: 312px solid transparent;
+    border-right:312px solid transparent;
+    position: absolute;
+    top: -180px;
+    left:0;
+}
+
+.giant-hex {
+    margin-top: -400px;
+    
+    width: 624px;
+    height: 360px;
+    background-color: #6C6;
+    position: absolute;
+    display:block;
+    left: 30%;
+}
+
+.giant-hex:after {
+    content: "";
+    width: 0;
+    position: absolute;
+    bottom: -180px;
+    border-top: 180px solid #6C6;
+    border-left: 312px solid transparent;
+    border-right: 312px solid transparent;
+    left:0;
+}
+
+.inner-giant-hex:before {
+    content: " ";
+    width: 0; height: 0;
+    border-bottom: 180px solid #fff;
+    border-left: 312px solid transparent;
+    border-right:312px solid transparent;
+    position: absolute;
+    top: -180px;
+    left:0;
+}
+
+.inner-giant-hex {
+	z-index:100;
+  	left:0;
+    width: 624px;
+    height: 360px;
+    background-color: #fff;
+ 	position: absolute;
+ 	-webkit-transform: scale(.98,.98);
+   
+   
+}
+
+.inner-giant-hex:after {
+    content: "";
+    width: 0;
+    position: absolute;
+    bottom: -180px;
+    border-top: 180px solid #fff;
+    border-left: 312px solid transparent;
+    border-right: 312px solid transparent;
+    left:0;
 }
